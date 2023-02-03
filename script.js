@@ -116,7 +116,6 @@ const startChallenge = () => {
     window.addEventListener('keydown', startOrStop)
     count = setInterval(countdown, 1000);
     console.log(timer.style);
-    timer.style.visibility = 'visible';
 }
 
 const completeChallenge = () => {

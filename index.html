@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/x-icon" href="">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="module" defer src="./script.js"></script>
+  <title>Typing Challenge</title>
+</head>
+<body>
+
+  <header>
+    <h1>Typing Challenge</h1>
+  </header>
+
+  <main>
+    <section id="sidebar">
+      <div class="selection">
+        <h1 class="title">Challenge</h1>
+      </div>
+    </section>
+
+    <section id="portals">
+      <div class="display portal">
+          <h1 class="title">Display Portal</h1>
+          <p class="description">Welcome to the Typing Challenge. This challenge will test your typing abilities alongside the rest of the community. See if you can beat any of their scores.</p>
+          <span id="timer">time</span>
+          <section id="testPortal">
+            <div id="words"></div>
+          </section>
+      </div>
+      <div class="user portal">
+        <section class="information">
+          <h1 class="title">User Station</h1>
+          <p class="description">The portal below will show your statistics when you finish a challenge. Good luck!</p>
+        </section>
+        <section class="statistics">
+          <div class="sections">
+            <h1 id="user"></h1>
+            <ul id="userStats">
+              <li class="items">Name: </li>
+              <li class="items">Rating: </li>
+              <li class="items">Errors: </li>
+              <li class="items">Words Per Minute: </li>
+            </ul>
+          </div>
+          <div class="sections">
+            <button id="start" class="button">Start</button>
+            <button id="reset" class="button">Reset</button>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="left">
+      <a id="github" href="https://github.com/javascript-30-challenge/12-Key-Sequence-Detection"><i class='fa fa-github icon-style' style="font-size:40px"></i></a>
+    </div>
+    <div class="right">
+      <span id="copyright">&copy Copyright 2023</span>
+    </div>
+  </footer>
+
+</body>
+</html>

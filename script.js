@@ -198,7 +198,8 @@ const secretFunction = (e) => {
         body.style.backgroundColor = '#000';
         body.style.color = '#FFF';
         githubLogo.style.color = '#FFF';
-        words.style.color = '#FFF';
+        words.style.backgroundColor = '#FFF';
+        words.style.border = '6px groove lightsteelblue';
     }
 }
 

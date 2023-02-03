@@ -115,6 +115,7 @@ const startChallenge = () => {
     window.removeEventListener('keyup', secretFunction);
     window.addEventListener('keydown', startOrStop)
     count = setInterval(countdown, 1000);
+    timer.style.visibility = 'visible';
 }
 
 const completeChallenge = () => {
@@ -165,7 +166,7 @@ const resetStats = () => {
     words.childNodes.forEach(child => {
         child.style.color = '#000';
     });
-    userInfo.textContent = `Up for a challenge ${usersName}?`
+    userInfo.textContent = `Up for a challenge ${usersName}?`;
 }
 
 const startOrStop = (e) => {

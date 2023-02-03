@@ -104,7 +104,6 @@ main {
 }
 
 #timer {
-    visibility: hidden;
     height: 1em;
     width: 1em;
 }

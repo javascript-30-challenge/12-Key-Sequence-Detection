@@ -53,7 +53,7 @@ const challenges = [
 let usersName;
 let currentChallenge;
 let time = 0;
-let count = 0;
+let count;
 let wordsArray = [];
 let userInputArray = [];
 let userScore = 0;
@@ -118,8 +118,8 @@ const startChallenge = () => {
 }
 
 const completeChallenge = () => {
-    window.removeEventListener('keydown', startOrStop);
     clearInterval(count);
+    window.removeEventListener('keydown', startOrStop);
     window.addEventListener('keyup', secretFunction);
     index = 0;
     calculateStats()
@@ -162,7 +162,6 @@ const resetStats = () => {
     userErrors = 0;
     userScore = 0;
     time = 0;
-    count = 0;
     words.childNodes.forEach(child => {
         child.style.color = '#000';
     });

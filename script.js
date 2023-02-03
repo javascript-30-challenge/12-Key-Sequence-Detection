@@ -119,7 +119,7 @@ const startChallenge = () => {
 
 const completeChallenge = () => {
     window.removeEventListener('keydown', startOrStop);
-    window.clearInterval(count);
+    clearInterval(count);
     window.addEventListener('keyup', secretFunction);
     index = 0;
     calculateStats()
